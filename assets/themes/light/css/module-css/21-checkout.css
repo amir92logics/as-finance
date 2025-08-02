@@ -1,0 +1,183 @@
+.checkout{
+    padding: 120px 0 120px;
+}
+.billing-container{
+    border-radius: 8px;
+    border: 1px solid #E7F6E7;
+    background: #F8FDF8;
+    padding: 32px 32px;
+}
+.billing-container h5, .order-summery h5{
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    margin-bottom: 22px;
+}
+.billing-input{
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #F1F1F1;
+    background: var(--white-color);
+    padding: 14px 16px;
+}
+.billing-input::placeholder{
+    color: var(--text-color-1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.billing-form .custom-checkbox .label-text {
+    color: var(--text-color-1);
+}
+
+.order-summery{
+    border-radius: 8px;
+    border: 1px solid #E7F6E7;
+    background: var(--white-color);
+    padding: 32px 32px;
+    margin-bottom: 30px;
+}
+.order-summery-single{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-summery-single-left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.order-summery-single .prod-thumb{
+    max-width: 95px;
+    width: 100%;
+    height: 68px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-title{
+    width: 210px;
+}
+.rating ul{
+    display: flex;
+    gap: 3px;
+}
+.rating ul li{
+    color: #F2E552;
+    font-size: 12px;
+}
+.order-summery-single-right h5{
+    font-size: 20px;
+}
+.order-summery-bottom ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #F1F1F1;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+.order-summery-bottom ul li:last-child{
+    font-size: 24px;
+}
+
+.billing-list .payment-list-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.billing-list .item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.billing-list .form-check-label .payment-list-image img {
+  
+}
+.billing-list .form-check-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    gap: 15px;
+    background-color: transparent;
+}
+.billing-list .form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: -12px;
+    margin-right: 5px;
+}
+.billing-container .chechout-terms{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.billing-container .btn-1{
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .checkout {
+        padding: 100px 0 100px;
+    }
+    .order-summery {
+        margin-top: 50px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .checkout {
+        padding: 80px 0 80px;
+    }
+    .order-summery {
+        margin-top: 50px;
+    }
+    .billing-container {
+        padding: 15px 15px;
+    }
+    .label-group {
+        flex-direction: column; 
+    }
+    .label-group .custom-checkbox{
+        margin-top: 0 !important;
+    }
+
+    .order-summery {
+        padding: 15px 15px;
+        width: 100%;
+        overflow: auto;
+    }
+    .order-summery-list, .order-summery-bottom {
+        min-width: 450px;
+    }
+
+    .payment-list-info .payment-list-title {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .billing-list .form-check-input {
+        margin-top: 0;
+    }
+}

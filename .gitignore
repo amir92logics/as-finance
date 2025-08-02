@@ -1,0 +1,14 @@
+# Laravel
+.env
+/vendor/
+
+# Node
+/node_modules/
+
+# IDEs
+.idea/
+/public/assets/upload/
+/assets/upload/
+/firebase-service.json
+/storage/main-cedar-391910-cd7c5ebfdd8b.json
+/main-cedar-391910-cd7c5ebfdd8b.json
