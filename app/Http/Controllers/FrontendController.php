@@ -203,7 +203,7 @@ class FrontendController extends Controller
             ->orderBy('created_at', 'desc')
             ->paginate(15);
 
-        return view(template() . 'user.projects.index', compact('projects'));
+        return view(template() . 'user.invests.index', compact('invests'));
     }
 
     public function plans()
@@ -300,7 +300,7 @@ class FrontendController extends Controller
         }
         $data['avg_rating'] = $stars;
 
-        $relatedProducts = Product::with('details')->where('category_id', $product->category_id)->where('id', '!=', $product->id)->limit(4)->get();
+        $relatedProducts = Product::with('details')->where('category_id', $product->category_id)->where('id', '!=', $product->id)->limit(12)->get();
         return view(template() . 'pages.product_details', compact('product', 'pageSeo', 'relatedProducts'), $data);
 
     }

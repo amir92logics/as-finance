@@ -140,7 +140,7 @@
                 <div class="card h-100">
                     <!-- Header -->
                     <div class="card-header card-header-content-between">
-                        <h4 class="card-header-title">@lang('Top projects')</h4>
+                        <h4 class="card-header-title">@lang('Top invests')</h4>
 
                         <a class="btn btn-ghost-secondary btn-sm" href="{{route('admin.project.index')}}">@lang('View all')</a>
                     </div>

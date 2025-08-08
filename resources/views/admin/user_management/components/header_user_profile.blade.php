@@ -79,7 +79,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link {{ request()->routeIs('admin.user.project.invest.history') ? 'active' : '' }}"
-               href="{{ route('admin.user.project.invest.history', $user->id) }}">@lang('Project Invest History')</a>
+                                       href="{{ route('admin.user.project.invest.history', $user->id) }}">@lang('Invest History')</a>
         </li>
         <li class="nav-item ms-auto">
             <div class="d-flex gap-2">

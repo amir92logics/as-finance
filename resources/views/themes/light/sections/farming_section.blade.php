@@ -8,9 +8,9 @@
         <img src="{{asset($themeTrue.'images/shape/farming-right-shape.png')}}" alt="shape">
     </div>
     <div class="container">
-        <div class="common-title-container">
-            <div class="common-title">
-                <div class="common-title-top-right">
+        <div class="common-title-container d-flex justify-content-center">
+            <div class="common-title text-center">
+                <div class="common-title-top-right d-flex justify-content-center">
                     <img src="{{asset($themeTrue.'images/shape/title-top-shape.png')}}" alt="shape">
                 </div>
                 <h3> {!! styleSentence($farming_section['single']['heading']??null,1) !!}</h3>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="farming-container">
+    <!-- <div class="farming-container">
         <div class="farming-carousol">
             <div class="four-item-carousel swiper-container farming-carousol-container">
                 <div class="swiper-wrapper">
@@ -47,7 +47,7 @@
                 <div class="swiper-button-prev"><i class="fa-regular fa-angle-left"></i></div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 <!-- farming -->
 

@@ -83,8 +83,8 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-between">
-        <div class="footer-copyright">
+    <div class="container d-flex justify-content-between">    
+    <div class="footer-copyright">
             <p class="copyright-text">@lang('All right reserved') @lang(basicControl()->site_title) &copy; @lang(date("Y"))</p>
         </div>
         <div class="language-box">

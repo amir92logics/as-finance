@@ -187,7 +187,7 @@
                 class="fa-regular fa-house"></i></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link {{menuActive(['user.projects'])}}" href="{{route('user.projects')}}">
+                        <a class="nav-link {{menuActive(['user.invests'])}}" href="{{route('user.invests')}}">
             <i class="fa-brands fa-slack"></i>
         </a>
     </li>
@@ -207,6 +207,11 @@
 
 <!-- Footer section start -->
 <footer id="footer" class="footer">
+         <div >
+         <div class="footer-copyright">
+            <p class="copyright-text">@lang('All Funds and transactions')</p>
+        </div>
+        </div>
     <div class="copyright">
         &copy; @lang('Copyright') <strong><span>{{basicControl()->site_title}}</span></strong>. @lang('All Rights Reserved')    </div>
 </footer>

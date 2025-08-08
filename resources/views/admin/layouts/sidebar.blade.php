@@ -77,15 +77,16 @@
                         </a>
                     </div>
 
-                    <span class="dropdown-header mt-3">@lang('Manage Project')</span>
+                    <span class="dropdown-header mt-3">@lang('Manage Invests')</span>
 
                     <div class="nav-item">
                         <a class="nav-link {{ menuActive(['admin.project.index','admin.project.create','admin.project.edit']) }}"
                            href="{{ route('admin.project.index') }}">
                             <i class="fa-thin fa-farm nav-icon"></i>
-                            <span class="nav-link-title">@lang("Projects")</span>
+                            <span class="nav-link-title">@lang("Invests")</span>
                         </a>
                     </div>
+
 
 
                     <div class="nav-item">

@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('page_title',__('Project Invest History'))
+@section('page_title',__('Invest History'))
 @section('content')
     <div class="content container-fluid">
         <div class="page-header">
@@ -9,10 +9,10 @@
                         <ol class="breadcrumb breadcrumb-no-gutter">
                             <li class="breadcrumb-item"><a class="breadcrumb-link"
                                                            href="javascript:void(0);">@lang('Dashboard')</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">@lang('Project Invest History')</li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang('Invest History')</li>
                         </ol>
                     </nav>
-                    <h1 class="page-header-title">@lang('Project Invest History')</h1>
+                    <h1 class="page-header-title">@lang('Invest History')</h1>
                 </div>
             </div>
         </div>

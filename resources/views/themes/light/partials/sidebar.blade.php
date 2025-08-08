@@ -19,11 +19,11 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed {{isMenuActive(['user.projects'])}}" href="{{route('user.projects')}}">
+            <a class="nav-link collapsed {{isMenuActive(['user.invests'])}}" href="{{route('user.invests')}}">
                 <i class="fa-brands fa-slack"></i>
-                <span>@lang('Projects')</span>
+                <span>@lang('Invests')</span>
             </a>
-        </li>
+        </li> 
         <li class="nav-item">
             <a class="nav-link collapsed {{isMenuActive(['user.plan.investment'])}}"
                href="{{route('user.plan.investment')}}">
@@ -35,7 +35,7 @@
             <a class="nav-link collapsed {{isMenuActive(['user.project.investment'])}}"
                href="{{route('user.project.investment')}}">
                 <i class="fal fa-tractor"></i>
-                <span>@lang('Project Invest history')</span>
+                <span>@lang('Invest history')</span>
             </a>
         </li>
 

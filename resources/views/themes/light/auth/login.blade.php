@@ -20,7 +20,7 @@
                                 <form action="{{ route('login') }}" method="post">
                                     @csrf
                                     <div class="sign-in-form-group">
-                                        <label>@lang('Username or Email')</label>
+                                        <label>@lang('Username')</label>
                                         <input type="text" name="username" value="{{old('username',request()->username)}}" class="sign-in-input" placeholder="@lang('username or email')" required>
                                         @error('username')
                                         <span class="invalid-feedback d-block" role="alert">{{ $message }}<strong></strong>

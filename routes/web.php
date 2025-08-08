@@ -110,7 +110,7 @@ Route::group(['middleware' => ['maintenanceMode']], function () use ($basicContr
                 Route::get('project/investment',[HomeController::class,'projectInvestment'])->name('project.investment');
             });
 
-            Route::get('projects',[FrontendController::class,'projects'])->name('projects');
+            Route::get('invests',[FrontendController::class,'projects'])->name('invests');
             Route::get('investment-plan',[FrontendController::class,'plans'])->name('plans');
 
             /* ===== Wishlist ===== */

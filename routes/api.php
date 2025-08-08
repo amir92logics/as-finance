@@ -65,7 +65,7 @@ Route::middleware('auth:sanctum')->group(function (){
             Route::get('plan/invest/history',[InvestmentPlanController::class, 'investHistory']);
 
             //manage investment project
-            Route::get('projects/{language_id?}', [ProjectController::class,'index']);
+            Route::get('invests/{language_id?}', [ProjectController::class,'index']);
             Route::post('project/invest',[ProjectController::class, 'invest']);
             Route::get('project/invest/history/{language_id?}',[ProjectController::class, 'investHistory']);
 

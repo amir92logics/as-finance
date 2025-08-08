@@ -26,16 +26,23 @@
         </div>
         <div class="row">
             @foreach($projects as $project)
-                <div class="col-lg-6 projectSingle">
+                <div class="col-lg-4 projectSingle">
                     <div class="project-single">
+                       
+                        <div class="project-single-content">
+                        <div class="row">
+                        <div class="col-lg-6">
                         {!! $project->projectStatus() !!}
-                        <div class="project-single-image">
+                        <div class="">
                             <img src="{{$project->getThumbnailImage()}}" alt="image">
                         </div>
-                        <div class="project-single-content">
+                            </div>
+                            <div class="col-lg-6">
                             <div class="project-single-content-top">
                                 <a href="{{route('project.details',optional($project->details)->slug??'project-title')}}">{!! optional($project->details)->title !!}</a>
                                 <p><i class="fa-sharp fa-light fa-location-dot"></i> {{$project->location}}</p>
+                            </div>
+                            </div>
                             </div>
                             <div class="project-single-content-bottom">
                                 <div class="project-single-content-wrapper">

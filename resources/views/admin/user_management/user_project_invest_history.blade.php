@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('page_title',__('Project Invest History'))
+@section('page_title',__('Invest History'))
 @section('content')
     <div class="content container-fluid">
         <div class="row justify-content-lg-center">
@@ -18,8 +18,8 @@
                                         </div>
                                         <input type="search" id="datatableSearch"
                                                class="search form-control form-control-sm"
-                                               placeholder="@lang('Search project invest history')"
-                                               aria-label="@lang('Search project invest history')"
+                                                               placeholder="@lang('Search invest history')"
+                aria-label="@lang('Search invest history')"
                                                autocomplete="off">
                                     </div>
                                 </div>

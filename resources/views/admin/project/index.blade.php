@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('page_title',__('Projects'))
+@section('page_title',__('Invests'))
 @section('content')
     <div class="content container-fluid">
         <div class="page-header">
@@ -9,10 +9,10 @@
                         <ol class="breadcrumb breadcrumb-no-gutter">
                             <li class="breadcrumb-item"><a class="breadcrumb-link"
                                                            href="javascript:void(0);">@lang('Dashboard')</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">@lang('Projects')</li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang('Invests')</li>
                         </ol>
                     </nav>
-                    <h1 class="page-header-title">@lang('Projects')</h1>
+                    <h1 class="page-header-title">@lang('Invests')</h1>
                 </div>
             </div>
         </div>
@@ -27,8 +27,8 @@
                         </div>
                         <input type="search" id="datatableSearch"
                                class="search form-control form-control-sm"
-                               placeholder="@lang('Search projects')"
-                               aria-label="@lang('Search projects')"
+                                               placeholder="@lang('Search invests')"
+                aria-label="@lang('Search invests')"
                                autocomplete="off">
                         <a class="input-group-append input-group-text display-none" href="javascript:void(0)">
                             <i id="clearSearchResultsIcon" class="bi-x"></i>

@@ -816,19 +816,36 @@ if (!function_exists('getHeaderMenuData')) {
                 if (!basicControl()->ecommerce && $pageDetails->slug == 'products') {
                     continue;
                 }
+
+                $name = $pageDetails->page_name ?? $pageDetails->name ?? $menuItem;
+                if (strtolower($name) === 'project') {
+                    $name = 'Invest';
+                }
+
                 $menuIDetails = [
-                    'name' => $pageDetails->page_name ?? $pageDetails->name ?? $menuItem,
-                    'route' => isset($pageDetails->slug) ? route('page', $pageDetails->slug) : ($pageDetails->custom_link ?? staticPagesAndRoutes($menuItem)),
+                    'name' => $name,
+                    'route' => isset($pageDetails->slug)
+                        ? route('page', $pageDetails->slug)
+                        : ($pageDetails->custom_link ?? staticPagesAndRoutes($menuItem)),
                 ];
             } elseif (is_array($menuItem)) {
                 $pageDetails = getPageDetails($key);
                 $child = getHeaderChildMenu($menuItem);
+
+                $name = $pageDetails->page_name ?? $pageDetails->name ?? $key;
+                if (strtolower($name) === 'project') {
+                    $name = 'Invest';
+                }
+
                 $menuIDetails = [
-                    'name' => $pageDetails->page_name ?? $pageDetails->name,
-                    'route' => isset($pageDetails->slug) ? route('page', $pageDetails->slug) : ($pageDetails->custom_link ?? staticPagesAndRoutes($key)),
+                    'name' => $name,
+                    'route' => isset($pageDetails->slug)
+                        ? route('page', $pageDetails->slug)
+                        : ($pageDetails->custom_link ?? staticPagesAndRoutes($key)),
                     'child' => $child
                 ];
             }
+
             $menuData[] = $menuIDetails;
         }
 
